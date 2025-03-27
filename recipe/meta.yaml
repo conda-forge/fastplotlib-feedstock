@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/f/fastplotlib/fastplotlib-{{ version }}.tar.gz
-  sha256: 57d92acf97feadf2009f9c4e12d2bed75e0bc199c8016cd14d09cd8f
+  sha256: 57d92acf97feadf2009f9c4e12d2bed75e0bc199c8016cd14d09cd8f9c01b529
 
 build:
   noarch: python
