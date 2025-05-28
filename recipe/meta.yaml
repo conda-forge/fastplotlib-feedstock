@@ -20,6 +20,7 @@ requirements:
     - setuptools
     - wheel
     - pip
+    - flit-core
   run:
     - python >={{ python_min }}
     - numpy >=1.23.0
