@@ -1,4 +1,4 @@
-{% set version = "0.5.1" %}
+{% set version = "0.6.0" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/f/fastplotlib/fastplotlib-{{ version }}.tar.gz
-  sha256: 009ba1110f2ad1d94fe6ec4c63668e7dd3c18d9336185237a7bce725cfcbcbc2
+  sha256: d0266b7621114f619b86e340b60f0130087f1673c114cfb9cc74677c38fb7db8
 
 build:
   noarch: python
