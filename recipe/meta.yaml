@@ -7,11 +7,13 @@ package:
 source:
   url: https://pypi.org/packages/source/f/fastplotlib/fastplotlib-{{ version }}.tar.gz
   sha256: 2de8b7cec83d5eeb7c39aacdf28994a46f87ce94354a684c8d3d89ebdbe796dd
+  patches:
+    - 0001-loosen-pygfx-pin.patch
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
