@@ -1,19 +1,19 @@
-{% set version = "0.6.1" %}
+{% set version = "0.7.0" %}
 
 package:
   name: fastplotlib
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/f/fastplotlib/fastplotlib-{{ version }}.tar.gz
-  sha256: 2de8b7cec83d5eeb7c39aacdf28994a46f87ce94354a684c8d3d89ebdbe796dd
+  url: https://files.pythonhosted.org/packages/source/f/fastplotlib/fastplotlib-{{ version }}.tar.gz
+  sha256: 6c77270ddb7480454c36384a4c178d5c12f1eccb37414ca547723f48a8361ac0
   patches:
     - 0001-loosen-pygfx-pin.patch
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
